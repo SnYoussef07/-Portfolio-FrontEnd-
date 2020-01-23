@@ -1,0 +1,49 @@
+.card .card-content {
+    padding-bottom: 30px;
+}
+
+.card .card-content {
+    padding: 20px;
+    padding-bottom: 20px;
+    border-radius: 0 0 2px 2px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+}
+
+#skills h4 {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    font-size: 2.28rem;
+    line-height: 2.508rem;
+    margin: 1.14rem 0 0.912rem 0;
+    margin-bottom: 0.912rem;
+}
+
+#skills .col img.responsive-img {
+    margin: 0 auto;
+    max-height: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#skills .card .card-content {
+    padding: 20px;
+    padding-bottom: 20px;
+    -webkit-border-radius: 0 0 2px 2px;
+    -moz-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#skills .card {
+    margin-bottom: 60px;
+    border-radius: 2px;
+    margin: 0.5rem 0 1rem 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}

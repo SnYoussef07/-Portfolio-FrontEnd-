@@ -3,6 +3,10 @@ import '../css/index.css'
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import About from "../components/About";
+import Contact from "./Contact";
+import Footer from "../components/Footer";
+import Skills from "./Skills";
+import Projects from "./Projects";
 
 class Home extends Component {
     render() {
@@ -11,7 +15,10 @@ class Home extends Component {
                 <Navbar/>
                 <Header/>
                 <About/>
-                <div><h1>Hello</h1></div>
+                <Skills/>
+                <Projects/>
+                <Contact/>
+                <Footer/>
             </>
         );
     }

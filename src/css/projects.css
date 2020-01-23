@@ -1,0 +1,214 @@
+[class^="imghvr-"],
+[class*=" imghvr-"] {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    max-width: 100%;
+    color: #fff;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+[class^="imghvr-"] > img,
+[class*=" imghvr-"] > img {
+    vertical-align: top;
+    max-width: 100%;
+
+    width: 400px;
+    height: 300px;
+}
+
+[class^="imghvr-"] figcaption,
+[class*=" imghvr-"] figcaption {
+    background-color: #252934;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+}
+
+[class^="imghvr-"] figcaption h1,
+[class^="imghvr-"] figcaption h2,
+[class^="imghvr-"] figcaption h3,
+[class^="imghvr-"] figcaption h4,
+[class^="imghvr-"] figcaption h5,
+[class^="imghvr-"] figcaption h6,
+[class*=" imghvr-"] figcaption h1,
+[class*=" imghvr-"] figcaption h2,
+[class*=" imghvr-"] figcaption h3,
+[class*=" imghvr-"] figcaption h4,
+[class*=" imghvr-"] figcaption h5,
+[class*=" imghvr-"] figcaption h6 {
+    color: #ffffff;
+}
+
+[class^="imghvr-"],
+[class*=" imghvr-"],
+[class^="imghvr-"]:before,
+[class^="imghvr-"]:after,
+[class*=" imghvr-"]:before,
+[class*=" imghvr-"]:after,
+[class^="imghvr-"] *,
+[class*=" imghvr-"] *,
+[class^="imghvr-"] *:before,
+[class^="imghvr-"] *:after,
+[class*=" imghvr-"] *:before,
+[class*=" imghvr-"] *:after {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+}
+
+/* imghvr-shutter-in-*
+   ----------------------------- */
+[class^="imghvr-shutter-in-"]:after,
+[class^="imghvr-shutter-in-"]:before,
+[class*=" imghvr-shutter-in-"]:after,
+[class*=" imghvr-shutter-in-"]:before {
+    background: #252934;
+    position: absolute;
+    content: "";
+}
+
+[class^="imghvr-shutter-in-"]:after,
+[class*=" imghvr-shutter-in-"]:after {
+    top: 0;
+    left: 0;
+}
+
+[class^="imghvr-shutter-in-"]:before,
+[class*=" imghvr-shutter-in-"]:before {
+    right: 0;
+    bottom: 0;
+}
+
+[class^="imghvr-shutter-in-"] figcaption,
+[class*=" imghvr-shutter-in-"] figcaption {
+    opacity: 0;
+    z-index: 1;
+}
+
+[class^="imghvr-shutter-in-"]:hover figcaption,
+[class*=" imghvr-shutter-in-"]:hover figcaption {
+    opacity: 1;
+    transition-delay: 0.21s;
+}
+
+/* imghvr-shutter-in-vert
+   ----------------------------- */
+.imghvr-shutter-in-vert:after,
+.imghvr-shutter-in-vert:before {
+    height: 0;
+    width: 100%;
+}
+
+.imghvr-shutter-in-vert:hover:after,
+.imghvr-shutter-in-vert:hover:before {
+    height: 50%;
+}
+
+figcaption {
+    padding-top: 15% !important;
+    /* list-style-type: circle; */
+}
+
+figcaption ul {
+    list-style-type: circle;
+}
+
+figcaption ul li {
+    color: #47bec9;
+    list-style: none;
+}
+
+#project [class*="col-"] {
+    padding: 0;
+}
+
+/*Button filter*/
+.example_d {
+    color: #252934 !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 14px;
+    border: 4px solid #252934 !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.example_d:hover {
+    color: #47bec9 !important;
+    border-radius: 50px;
+    border-color: #47bec9 !important;
+    transition: all 0.3s ease 0s;
+}
+
+.btnPhone {
+    padding-top: 35% !important;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    display: none;
+}
+
+.btnPhone a {
+    color: white !important;
+    background-color: #252934 !important;
+}
+
+/* query Pour smartphon*/
+@media (max-width: 767px) {
+    /*Button*/
+    .example_d {
+        color: #252934 !important;
+        text-transform: uppercase;
+        background: #ffffff;
+        padding: 8px;
+        border: 2px solid #252934 !important;
+        border-radius: 6px;
+        display: inline-block;
+        transition: all 0.3s ease 0s;
+        margin-right: 0.3rem !important;
+    }
+
+    .example_d:hover {
+        color: #47bec9 !important;
+        border-radius: 50px;
+        border-color: #47bec9 !important;
+        transition: all 0.3s ease 0s;
+    }
+
+    .btnPhone {
+        padding-top: 35% !important;
+        padding: 30px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: #ffffff;
+        display: block;
+    }
+}
+
+/* query pour tablette*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .btnPhone {
+        padding-top: 35% !important;
+        padding: 30px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: #ffffff;
+        display: block;
+    }
+}

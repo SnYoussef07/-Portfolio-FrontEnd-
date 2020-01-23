@@ -1,0 +1,90 @@
+#contact input,
+textarea {
+    background-color: #1e242c !important;
+    border: 0 !important;
+    color: #fff;
+}
+
+#contact {
+    background-color: #252934;
+    margin-top: 10rem;
+    padding-bottom: 8rem;
+    padding-top: 0 !important;
+}
+
+#contact svg {
+    margin-bottom: 7rem !important;
+}
+
+.btn {
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+    line-height: 1.5 !important;
+    font: 700 1.2rem "Roboto Slab", sans-serif !important;
+    padding: 0.7em 1.5em !important;
+    letter-spacing: 0.05rem !important;
+}
+
+.btn:focus {
+    outline: 2px dotted #55d7dc;
+}
+
+/* FOOTER */
+footer {
+    background: #1b242f;
+    padding: 70px 0 50px 0;
+    position: relative;
+}
+
+footer .fa-arrow-up {
+    position: absolute;
+    top: -25px;
+    background: #47bec9;
+    font-size: 30pt;
+    width: 47px;
+    height: 50px;
+    line-height: 40pt;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+footer .footnote {
+    font-size: 15pt;
+    color: #8f9aa7;
+    margin-top: 35px;
+    opacity: 0.6;
+}
+
+footer .footnote .highlight {
+    color: #47bec9 !important;
+}
+
+.fas {
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: 24px;
+    font-size: inherit;
+    text-rendering: auto;
+}
+
+footer .icon a {
+    text-decoration: none;
+}
+
+footer .icon a {
+    text-decoration: none;
+}
+
+footer .icon i {
+    color: #fff;
+    border: #fff solid 3px;
+    transition: 0.45s 0.0833333333s;
+}
+
+footer .icon i:hover {
+    color: #47bec9;
+    border: #47bec9 solid 3px;
+}
