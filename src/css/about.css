@@ -1,0 +1,203 @@
+/* ABOUT */
+.hexagon {
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/profil1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #8a66a3;
+    margin: auto;
+    border: 5px solid #252934;
+    box-shadow: 0px 55px 88px -56px rgba(27, 36, 47, 1);
+}
+
+/* **TimeLine** */
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #252934;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* ContainerT around content */
+.containerT {
+    padding: 0px 39px; /* 10 a 0 */
+    position: relative;
+    background-color: inherit;
+    width: 49.6%;
+}
+
+/* The circles on the timeline */
+.containerT::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #47bec9;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the containerT to the left */
+.left {
+    left: 0;
+}
+
+/* Place the containerT to the right */
+.right {
+    left: 50.4%;
+}
+
+/* Add arrows to the left containerT (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 16px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid gray;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #252934;
+}
+
+/* Add arrows to the right containerT (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 16px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #252934;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #252934 transparent transparent;
+}
+
+/* Fix the circle for containerTs on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    color: white;
+    padding: 20px 30px;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1) -55%, rgba(37, 41, 52, 1) 100%);
+    position: relative;
+    border-radius: 6px;
+}
+
+.contentR {
+    background: linear-gradient(45deg, rgba(37, 41, 52, 1) 55%, rgba(0, 0, 0, 1) 100%) !important;
+}
+
+.me {
+    font-size: 20px;
+}
+
+
+/* ARROW */
+.allArrow i {
+    border: solid #3ca2ab;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 13px;
+}
+
+.allArrow .rightV {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow:nth-child(1) {
+    opacity: 0.3;
+}
+
+.arrow:nth-child(2) {
+    opacity: 0.6;
+}
+
+.arrow:nth-child(3) {
+    opacity: 0.9;
+}
+
+.arrow:nth-child(4) {
+    opacity: 0.3;
+}
+
+.arrow:nth-child(5) {
+    opacity: 0.6;
+}
+
+.arrow:nth-child(6) {
+    opacity: 0.9;
+}
+
+
+/* query pour tablette*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .allArrow .rightV {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        margin-right: 1rem;
+    }
+
+}
+
+/* query Pour smartphon*/
+@media (max-width: 767px) {
+    .allArrow .rightV {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containerTs */
+    .containerT {
+        padding: 10px 40px; /* 10 a 0 */
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .containerT::before {
+        left: 60px;
+        border: medium solid #252934;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #252934 transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    /* Make all right containerTs behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}

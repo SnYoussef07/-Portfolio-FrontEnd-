@@ -1,0 +1,33 @@
+/* NAVBAR */
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    padding: 0 !important;
+
+    background-color: #1b242f !important;
+    border-bottom: 5px solid #47bec9;
+}
+
+nav ul li {
+    border-right: 2px solid black;
+    transition: 0.6s;
+    font-size: 17px;
+}
+
+nav li:hover {
+    background-color: #47bec9;
+}
+
+nav ul hr {
+    background-color: red;
+    width: 2px !important;
+    height: 100px !important;
+}
+
+nav .nav1 {
+    border-left: 2px solid black;
+}
+
+/* END NAVBAR */

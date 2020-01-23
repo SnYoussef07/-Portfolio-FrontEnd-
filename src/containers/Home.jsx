@@ -1,12 +1,18 @@
 import React, {Component} from 'react';
 import '../css/index.css'
+import Navbar from "../components/Navbar";
+import Header from "../components/Header";
+import About from "../components/About";
 
 class Home extends Component {
     render() {
         return (
-            <div>
-                <h1>Start <i className="fas fa-address-book"></i></h1>
-            </div>
+            <>
+                <Navbar/>
+                <Header/>
+                <About/>
+                <div><h1>Hello</h1></div>
+            </>
         );
     }
 }
