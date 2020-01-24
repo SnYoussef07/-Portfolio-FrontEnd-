@@ -8,8 +8,8 @@ import reducers from "./reducers";
 import {Provider} from "react-redux";
 import {BrowserRouter} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 

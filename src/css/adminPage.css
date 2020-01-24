@@ -1,0 +1,45 @@
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.side-menu {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    background-color: #252934;
+    border-right: 1px solid #e7e7e7;
+}
+
+.side-menu h4 {
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 18px;
+    margin-bottom: 0;
+}
+
+.side-menu h4 a {
+    text-decoration: none !important;
+    color: #47bec9 !important;
+    display: block !important;
+}
+
+.side-menu .nav {
+    width: 100% !important;
+}
+
+.side-menu .nav a {
+    text-decoration: none !important;
+    padding: 18px !important;
+    color: #47bec9 !important;
+    display: block !important;
+    width: 100% !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+
+.side-menu .nav a:hover {
+    background-color: #1b242f;
+}
+
+.side-menu h4:hover {
+    background-color: #1b242f;
+}
