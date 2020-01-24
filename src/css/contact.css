@@ -58,7 +58,8 @@ footer .footnote {
     opacity: 0.6;
 }
 
-footer .footnote .highlight {
+footer .footnote .highlight a {
+    text-decoration: none !important;
     color: #47bec9 !important;
 }
 

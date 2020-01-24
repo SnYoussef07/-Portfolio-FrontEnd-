@@ -1,11 +1,6 @@
 import React, {Component} from 'react';
 
 class SkillForm extends Component {
-    constructor(props) {
-        super(props);
-
-    }
-
     render() {
         return (
             <div className="projects p-5 w-75 mx-auto border">

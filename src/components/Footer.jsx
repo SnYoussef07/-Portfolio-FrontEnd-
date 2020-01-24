@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -16,7 +17,7 @@ const Footer = () => {
                 </div>
                 <div className="info-box text-center">
                     <div className="footnote">
-                        Snoussi Youssef <span className="highlight">©2019</span>
+                        Snoussi Youssef <span className="highlight"><Link to={"/admin-snouss"}>©2019</Link></span>
                     </div>
                 </div>
             </div>
