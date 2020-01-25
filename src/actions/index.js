@@ -55,3 +55,30 @@ export function getAllSkills() {
         })
     }
 }
+
+/* Skill Form */
+export function addProject({name, link}, file, skills) {
+    let formData = new FormData();
+    formData.append('file', file);
+    return function (dispatch) {
+        axios.post(`${URL}/projects`, {
+            name,
+            link,
+            skills
+        }, {
+            headers: {
+                Authorization: localStorage.getItem("token")
+            }
+        }).then(response => {
+            //dispatch({type: AT_SKILLS.CREATE_SKILL, payload: response.data});
+            axios.post(`${URL}/uploadImageProject/${response.data.id}`, formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data',
+                    Authorization: localStorage.getItem("token")
+                }
+            });
+        }).catch(error => {
+            console.log(error);
+        })
+    }
+}

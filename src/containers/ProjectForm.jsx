@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Field, reduxForm} from "redux-form";
 import {connect} from "react-redux";
-import {addSkill} from "../actions";
+import {addProject} from "../actions";
 
-const FIELDS = {name: "name", link: "link", skills: "skills"};
+const FIELDS = {name: "name", link: "link"};
 
 class ProjectForm extends Component {
     constructor(props) {
@@ -30,12 +30,11 @@ class ProjectForm extends Component {
         e.target.classList.toggle("text-white");
         e.target.disabled = true;
     };
-
     handleChangeProject = e => {
         this.setState({currentFileProject: e.target.files.item(0)});
     };
     handleSubmit = project => {
-        //this.props.addSkill(skill, this.state.currentFileSkill);
+        this.props.addProject(project, this.state.currentFileProject, this.state.skillChoice);
     };
 
     render() {
@@ -97,7 +96,9 @@ const mapStateToProps = (state) => {
     }
 };
 
-const mapDispatchToProps = {};
+const mapDispatchToProps = {
+    addProject
+};
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(formProject);
