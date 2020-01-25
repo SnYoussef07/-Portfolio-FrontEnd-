@@ -91,3 +91,24 @@ export function getAllProject() {
         })
     }
 }
+
+export function getAllProjectByCat(cat) {
+    return function (dispatch) {
+        axios.get(`${URL}/projects`).then(response => {
+            let projectFilter = [];
+            projectFilter = response.data.filter(project => {
+                let isIn = false;
+                project.skills.map(skill => {
+                    if (skill.name === cat) {
+                        isIn = true;
+                    }
+                    return skill;
+                });
+                return isIn;
+            });
+            dispatch({type: AT_PROJECTS.READ_ALL_PROJECT, payload: projectFilter});
+            //dispatch({type: AT_PROJECTS.READ_ALL_PROJECT, payload: response.data});
+        })
+
+    }
+}

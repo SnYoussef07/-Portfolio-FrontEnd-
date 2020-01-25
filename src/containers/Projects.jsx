@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
-import {getAllProject} from "../actions/index";
+import {getAllProject, getAllProjectByCat} from "../actions/index";
 import '../css/projects.css'
 import ProjectItem from "../components/ProjectItem";
 
@@ -8,6 +8,10 @@ class Projects extends Component {
     componentDidMount() {
         this.props.getAllProject();
     }
+
+    handleClickFilter = (cat) => {
+        this.props.getAllProjectByCat(cat);
+    };
 
     render() {
         return (
@@ -18,11 +22,18 @@ class Projects extends Component {
                     </h1>
                     <hr className="hr-title mb-5"/>
                     <div className="d-flex flex-row justify-content-center border-bottom py-4">
-                        <button className="example_d mr-3">All</button>
-                        <button className="example_d mr-3">Java / Spring</button>
-                        <button className="example_d mr-3">React</button>
-                        <button className="example_d mr-3">React Native</button>
-                        <button className="example_d mr-3">Angular</button>
+                        <button onClick={() => this.props.getAllProject()} className="example_d mr-3">All</button>
+                        <button onClick={() => this.handleClickFilter("Spring Framework")}
+                                className="example_d mr-3">Java /
+                            Spring
+                        </button>
+                        <button onClick={() => this.handleClickFilter("React")} className="example_d mr-3">React
+                        </button>
+                        <button onClick={() => this.handleClickFilter("React Native")} className="example_d mr-3">React
+                            Native
+                        </button>
+                        <button onClick={() => this.handleClickFilter("Angular")} className="example_d mr-3">Angular
+                        </button>
                     </div>
                     <div className="row py-5">
                         {/*Boucle ca */}
@@ -46,7 +57,8 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = {
-    getAllProject
+    getAllProject,
+    getAllProjectByCat
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Projects);
