@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b292a713-45c7-4a07-abb3-d1cac699bec0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/snyou.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/ReducerAuth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/action-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/action-types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/AdminPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/AdminPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/DispatchAdmin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/DispatchAdmin.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Projects.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/SkillForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/SkillForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/adminPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/adminPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/ReducerProjects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/ReducerProjects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/ReducerSkills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/ReducerSkills.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +80,8 @@
       <option name="presentableId" value="Default" />
       <updated>1579805123714</updated>
       <workItem from="1579805125887" duration="8305000" />
-      <workItem from="1579887818055" duration="7625000" />
+      <workItem from="1579887818055" duration="15610000" />
+      <workItem from="1579952645637" duration="3032000" />
     </task>
     <servers />
   </component>

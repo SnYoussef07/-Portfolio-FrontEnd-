@@ -43,3 +43,14 @@
 .side-menu h4:hover {
     background-color: #1b242f;
 }
+
+.btn-primary {
+    background-color: #4CAF50 !important; /* Green */
+    border: none !important;
+    color: white !important;
+    padding: 15px 32px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    font-size: 16px !important;
+}

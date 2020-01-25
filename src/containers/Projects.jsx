@@ -47,7 +47,6 @@ class Projects extends Component {
                                         <span className="mr-2">
                                             <img
                                                 src="./img/html5.png"
-                                                html
                                                 alt=""
                                                 width="40px"
                                                 height="40px"
