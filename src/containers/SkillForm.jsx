@@ -60,8 +60,6 @@ class SkillForm extends Component {
                         </div>
                         <div className="custom-file">
                             <input type="file" className="custom-file-input" onChange={this.handleChange}/>
-                            {/*<Field name={FIELDS.logo} onChange={this.handleChange} component="input" type="file"*/}
-                            {/*       className="custom-file-input"/>*/}
                             <label className="custom-file-label" htmlFor="inputGroupFile01">Choose
                                 file</label>
                         </div>

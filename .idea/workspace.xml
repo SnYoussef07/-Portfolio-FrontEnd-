@@ -5,11 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/DispatchAdmin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/DispatchAdmin.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Projects.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/SkillForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/SkillForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/adminPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/adminPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/ReducerProjects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/ReducerProjects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/ReducerSkills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/ReducerSkills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Skills.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Skills.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,7 @@
       <updated>1579805123714</updated>
       <workItem from="1579805125887" duration="8305000" />
       <workItem from="1579887818055" duration="15610000" />
-      <workItem from="1579952645637" duration="3032000" />
+      <workItem from="1579952645637" duration="4724000" />
     </task>
     <servers />
   </component>
@@ -97,5 +95,9 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="726" y="455" width="467" height="176" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.34.1920.1046@0.34.1920.1046" timestamp="1579809669942" />
+    <state x="624" y="245" key="run.anything.popup" timestamp="1579957752569">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="624" y="245" key="run.anything.popup/1920.0.1920.1080/0.34.1920.1046@0.34.1920.1046" timestamp="1579957752569" />
   </component>
 </project>

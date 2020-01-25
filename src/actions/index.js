@@ -46,3 +46,12 @@ export function addSkill({name, category}, file) {
         })
     }
 }
+
+/*Skill get all */
+export function getAllSkills() {
+    return function (dispatch) {
+        axios.get(`${URL}/skills`).then(response => {
+            dispatch({type: AT_SKILLS.READ_ALL_SKILL, payload: response.data});
+        })
+    }
+}
