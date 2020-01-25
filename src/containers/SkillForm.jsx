@@ -16,7 +16,7 @@ class SkillForm extends Component {
 
     renderInputComponent = field => {
         return (
-            <div className="form-group mr-5">
+            <div className="form-group">
                 <label className="mr-5">{field.label}</label>
                 <input {...field.input} type={field.type} className="form-control"/>
                 <p className="text-danger">{field.meta.error}</p>

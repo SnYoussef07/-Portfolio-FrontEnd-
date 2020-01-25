@@ -12,7 +12,7 @@ class Skills extends Component {
 
     render() {
         return (
-            <section className="bg-light border-top border-bottom" id="skills">
+            <section className="border-top border-bottom" id="skills">
                 <div className="container-fluid">
                     <h1 className="text-center">
                         Skills

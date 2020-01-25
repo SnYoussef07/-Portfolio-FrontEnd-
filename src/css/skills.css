@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+#skills {
+    background-color: #ededee !important;
+}
+
 #skills h4 {
     border-bottom: 1px solid #ddd;
     margin-bottom: 30px;
