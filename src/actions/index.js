@@ -70,7 +70,7 @@ export function addProject({name, link}, file, skills) {
                 Authorization: localStorage.getItem("token")
             }
         }).then(response => {
-            //dispatch({type: AT_SKILLS.CREATE_SKILL, payload: response.data});
+            dispatch({type: AT_PROJECTS.CREATE_PROJECT, payload: response.data});
             axios.post(`${URL}/uploadImageProject/${response.data.id}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
@@ -79,6 +79,15 @@ export function addProject({name, link}, file, skills) {
             });
         }).catch(error => {
             console.log(error);
+        })
+    }
+}
+
+/*project get all */
+export function getAllProject() {
+    return function (dispatch) {
+        axios.get(`${URL}/projects`).then(response => {
+            dispatch({type: AT_PROJECTS.READ_ALL_PROJECT, payload: response.data});
         })
     }
 }

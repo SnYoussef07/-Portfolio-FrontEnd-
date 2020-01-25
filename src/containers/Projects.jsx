@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
+import {connect} from "react-redux";
+import {getAllProject} from "../actions/index";
 import '../css/projects.css'
+import ProjectItem from "../components/ProjectItem";
 
 class Projects extends Component {
+    componentDidMount() {
+        this.props.getAllProject();
+    }
+
     render() {
         return (
             <section className="mb-5" id="project">
@@ -19,44 +26,12 @@ class Projects extends Component {
                     </div>
                     <div className="row py-5">
                         {/*Boucle ca */}
-                        <div className="col-lg-4 text-center">
-                            <figure className="imghvr-shutter-in-vert">
-                                <img src="../img/pj1.jpg" alt="example-image"/>
-                                <div className="btnPhone text-center">
-                                    <a href="#" className="btn btn-info">View</a>
-                                </div>
-                                <figcaption>
-                                    <h3 className="mb-3">Hello World</h3>
-                                    <div className="mb-5">
-                                        <span className="mr-2">
-                                            <img
-                                                src="./img/spring.png"
-                                                alt=""
-                                                width="40px"
-                                                height="40px"
-                                            />
-                                        </span>
-                                        <span className="mr-2">
-                                            <img
-                                                src="./img/react.png"
-                                                alt=""
-                                                width="40px"
-                                                height="40px"
-                                            />
-                                        </span>
-                                        <span className="mr-2">
-                                            <img
-                                                src="./img/html5.png"
-                                                alt=""
-                                                width="40px"
-                                                height="40px"
-                                            />
-                                        </span>
-                                    </div>
-                                    <a href="#" className="btn draw-border">View</a>
-                                </figcaption>
-                            </figure>
-                        </div>
+                        {this.props.projects && this.props.projects.map(project => {
+                            return (
+                                <ProjectItem key={project.id} project={project}/>
+                            )
+                        })}
+                        {/*Boucle ca */}
                     </div>
                 </div>
             </section>
@@ -64,4 +39,14 @@ class Projects extends Component {
     }
 }
 
-export default Projects;
+const mapStateToProps = (state) => {
+    return {
+        projects: state.projects
+    }
+};
+
+const mapDispatchToProps = {
+    getAllProject
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Projects);
