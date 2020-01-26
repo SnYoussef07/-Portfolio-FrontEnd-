@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectItem = ({project}) => {
     return (
-        <div className="col-lg-4 text-center">
+        <div className="col-lg-4 text-center animeProject">
             <figure className="imghvr-shutter-in-vert">
                 <img src={`http://localhost:8080/imageProject/${project.id}`}
                      alt="Image Project"/>
