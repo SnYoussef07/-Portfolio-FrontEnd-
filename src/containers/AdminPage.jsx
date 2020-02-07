@@ -11,11 +11,6 @@ class AdminPage extends Component {
                 <div className="row">
                     <div className="col-lg-2 side-menu">
                         <h4><Link className="nav-link" to={"/"}>Home</Link></h4>
-                        <div className="nav flex-column">
-                            <a className="nav-link " href="#">Projects</a>
-                            <a className="nav-link" href="#">Skills</a>
-                            <a className="nav-link" href="#">Message</a>
-                        </div>
                     </div>
                     <div className="col-lg-10">
                         <ProjectForm history={this.props.history}/>

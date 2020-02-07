@@ -53,10 +53,14 @@ class ProjectForm extends Component {
                     </div>
                     <div className="row d-flex flex-row">
                         {this.props.skills && this.props.skills.map(skill => {
-                            return (
-                                <button onClick={(e) => this.addSkillToTab(e, skill)} key={skill.id}
-                                        type="button" className="border m-2 p-2 ">{skill.name}</button>
-                            )
+                            if (skill.name === "Bootstrap" || skill.name === "React" || skill.name === "Redux" ||
+                                skill.name === "React Native" || skill.name === "Angular" ||
+                                skill.name === "Spring Framework" || skill.name === "MySQL") {
+                                return (
+                                    <button onClick={(e) => this.addSkillToTab(e, skill)} key={skill.id}
+                                            type="button" className="border m-2 p-2 ">{skill.name}</button>
+                                )
+                            }
                         })}
                     </div>
                     <div className="form-group my-3">
