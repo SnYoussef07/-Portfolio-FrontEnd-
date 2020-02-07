@@ -18,8 +18,8 @@ class AdminPage extends Component {
                         </div>
                     </div>
                     <div className="col-lg-10">
-                        <ProjectForm/>
-                        <SkillForm/>
+                        <ProjectForm history={this.props.history}/>
+                        <SkillForm history={this.props.history}/>
                     </div>
                 </div>
             </div>

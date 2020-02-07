@@ -9,7 +9,7 @@ class DispatchAdmin extends Component {
         return (
             <>
                 {this.props.isAuth === 0 && <Login/>}
-                {this.props.isAuth === 1 && <AdminPage/>}
+                {this.props.isAuth === 1 && <AdminPage history={this.props.history}/>}
                 {this.props.isAuth === 2 && <Login/>}
             </>
         );
