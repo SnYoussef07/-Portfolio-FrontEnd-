@@ -60,6 +60,8 @@ class ProjectForm extends Component {
                                     <button onClick={(e) => this.addSkillToTab(e, skill)} key={skill.id}
                                             type="button" className="border m-2 p-2 ">{skill.name}</button>
                                 )
+                            } else {
+                                return null;
                             }
                         })}
                     </div>
