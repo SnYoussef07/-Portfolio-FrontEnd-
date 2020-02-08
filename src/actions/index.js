@@ -112,3 +112,13 @@ export function getAllProjectByCat(cat) {
 
     }
 }
+
+/* Form Contact */
+export function sendEmail({name, email, text}) {
+    return function (dispatch) {
+        let to = "snoussiyoussef@live.fr";
+        let subject = "De " + name + " , Email : " + email;
+
+        axios.post(`${URL}/sendEmail`, {to, subject, text});
+    }
+}
