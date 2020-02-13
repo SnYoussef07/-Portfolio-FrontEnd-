@@ -4,7 +4,7 @@ const ProjectItem = ({project}) => {
     return (
         <div className="col-lg-4 text-center animeProject">
             <figure className="imghvr-shutter-in-vert">
-                <img src={`http://localhost:8080/imageProject/${project.id}`}
+                <img src={`http://194.99.20.122:8080/imageProject/${project.id}`}
                      alt="Project"/>
                 <div className="btnPhone text-center">
                     <a href={project.link} className="btn btn-info">View</a>
@@ -16,7 +16,7 @@ const ProjectItem = ({project}) => {
                             return (
                                 <span key={skill.id} className="mr-2">
                                     <img
-                                        src={`http://localhost:8080/logoSkill/${skill.id}`}
+                                        src={`http://194.99.20.122:8080/logoSkill/${skill.id}`}
                                         alt="logo Skill"
                                         width="40px"
                                         height="40px"
@@ -25,7 +25,7 @@ const ProjectItem = ({project}) => {
                             )
                         })}
                     </div>
-                    <a href={project.link} className="btn draw-border">View</a>
+                    <a href={`http://${project.link}`} className="btn draw-border">View</a>
                 </figcaption>
             </figure>
         </div>

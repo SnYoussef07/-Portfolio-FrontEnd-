@@ -11,13 +11,14 @@ const About = () => {
             <div className="container-fluid">
                 <div className="row py-5">
                     <div className="col-lg-5 text-center my-4">
-                        <div className="hexagon rounded-circle mb-4"></div>
-                        <div className="me py-4">
+                        <div className="hexagon rounded-circle mb-4"> </div>
+                        <div className="me p-5">
                             <p>Hi.</p>
-                            <p>I'm a web developer based in brussel.</p>
+                            <p>I'm a developer based in brussel.</p>
                             <p>
                                 I have a passion for development and love to create for web and
-                                mobile devices.
+                                mobile devices.I like teamwork, it allows us to share our ideas and help other people to
+                                contribute to the realization of the project
                             </p>
                         </div>
                     </div>
@@ -37,28 +38,29 @@ const About = () => {
                         <div className="timeline">
                             <div className="containerT left">
                                 <div className="content">
-                                    <h2>2017</h2>
+                                    <h2>2018-2019</h2>
                                     <p>
-                                        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad
-                                        nec admodum perfecto mnesarchum,
+                                        MolenGeek Coding School :<br/>
+                                        Développeur web ful l stack
                                     </p>
                                 </div>
                             </div>
                             <div className="containerT right">
                                 <div className="content contentR">
-                                    <h2>2016</h2>
+                                    <h2>2015-2018</h2>
                                     <p>
-                                        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad
-                                        nec admodum perfecto mnesarchum,
+                                        HE2B ESI :<br/>
+                                        Bachelier informatique & systèmes orientation réseaux
                                     </p>
                                 </div>
                             </div>
                             <div className="containerT left">
                                 <div className="content">
-                                    <h2>2015</h2>
+                                    <h2>2012-2014</h2>
                                     <p>
-                                        Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad
-                                        nec admodum perfecto mnesarchum,
+                                        Brussels, Belgium :<br/>
+                                        CESS Technique de qualification - Technicien en
+                                        informatique
                                     </p>
                                 </div>
                             </div>

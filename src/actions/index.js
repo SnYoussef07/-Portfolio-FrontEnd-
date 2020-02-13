@@ -1,7 +1,7 @@
 import axios from "axios"
 import {AT_PROJECTS, AT_SKILLS, AT_AUTH} from "./action-types";
 
-const URL = "http://localhost:8080";
+const URL = "http://194.99.20.122:8080";
 
 export function setAuthentication(mode) {
     return {
@@ -40,6 +40,10 @@ export function addSkill({name, category}, file) {
                     'Content-Type': 'multipart/form-data',
                     Authorization: localStorage.getItem("token")
                 }
+            }).then(response => {
+
+            }).catch(err => {
+                console.log(err)
             });
         }).catch(error => {
             console.log(error);
@@ -107,7 +111,6 @@ export function getAllProjectByCat(cat) {
                 return isIn;
             });
             dispatch({type: AT_PROJECTS.READ_ALL_PROJECT, payload: projectFilter});
-            //dispatch({type: AT_PROJECTS.READ_ALL_PROJECT, payload: response.data});
         })
 
     }

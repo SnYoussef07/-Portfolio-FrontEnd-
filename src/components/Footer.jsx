@@ -1,12 +1,14 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowUp} from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
     return (
         <footer className="py-5">
             <div className="container text-center">
-                <a href="#intro">
-                    <i className="fas fa-arrow-up text-light" dest="intro"/>
+                <a>
+                    <FontAwesomeIcon icon={faArrowUp} className="text-light fa-arrow-up" dest="intro"/>
                 </a>
                 <div className="my-5 icon">
                     <a href="https://www.linkedin.com/in/youssef-snoussi-873998180/"><i className=" fab fa-linkedin-in

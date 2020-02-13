@@ -29,7 +29,7 @@ class Skills extends Component {
                                             return (
                                                 skill.category === "HTML/CSS" &&
                                                 <div className="col s4 m2" key={skill.id}>
-                                                    <img alt="" src={`http://localhost:8080/logoSkill/${skill.id}`}
+                                                    <img alt="" src={`http://194.99.20.122:8080/logoSkill/${skill.id}`}
                                                          className="responsive-img"/>
                                                     <p>{skill.name}</p>
                                                 </div>
@@ -49,7 +49,7 @@ class Skills extends Component {
                                             return (
                                                 skill.category === "Javascript" &&
                                                 <div className="col s4 m2" key={skill.id}>
-                                                    <img alt="" src={`http://localhost:8080/logoSkill/${skill.id}`}
+                                                    <img alt="" src={`http://194.99.20.122:8080/logoSkill/${skill.id}`}
                                                          className="responsive-img"/>
                                                     <p>{skill.name}</p>
                                                 </div>
@@ -69,7 +69,7 @@ class Skills extends Component {
                                             return (
                                                 skill.category === "Back-End" &&
                                                 <div className="col s4 m2" key={skill.id}>
-                                                    <img alt="" src={`http://localhost:8080/logoSkill/${skill.id}`}
+                                                    <img alt="" src={`http://194.99.20.122:8080/logoSkill/${skill.id}`}
                                                          className="responsive-img"/>
                                                     <p>{skill.name}</p>
                                                 </div>
@@ -89,7 +89,7 @@ class Skills extends Component {
                                             return (
                                                 skill.category === "Other" &&
                                                 <div className="col s4 m2" key={skill.id}>
-                                                    <img alt="" src={`http://localhost:8080/logoSkill/${skill.id}`}
+                                                    <img alt="" src={`http://194.99.20.122:8080/logoSkill/${skill.id}`}
                                                          className="responsive-img"/>
                                                     <p>{skill.name}</p>
                                                 </div>

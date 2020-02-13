@@ -94,6 +94,7 @@ const validate = values => {
     errors.name = validat.validateNotEmpty(values.name);
     errors.text = validat.validateNotEmpty(values.text);
     errors.email = validat.email(values.email);
+    errors.email = validat.validateNotEmpty(values.email);
 
     return errors;
 };
