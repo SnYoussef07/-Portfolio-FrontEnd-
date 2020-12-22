@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {applyMiddleware, createStore} from "redux";
+import { applyMiddleware, createStore } from "redux";
 import thunk from "redux-thunk";
 import reducers from "./reducers";
-import {Provider} from "react-redux";
-import {BrowserRouter} from "react-router-dom";
+import { Provider } from "react-redux";
+import { HashRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -19,9 +19,9 @@ ReactDOM.render(
             reducers
         )}
     >
-        <BrowserRouter>
-            <App/>
-        </BrowserRouter>
+        <HashRouter>
+            <App />
+        </HashRouter>
     </Provider>,
     document.getElementById("root")
 );
