@@ -12,7 +12,7 @@ const Header = () => {
                     <div className="line-spacer"></div>
                     <div className="typewriter">
                         <div className="typewriter-text">
-                            Web Developer Full Stack
+                            Developer Java Full Stack
                         </div>
                     </div>
                 </div>

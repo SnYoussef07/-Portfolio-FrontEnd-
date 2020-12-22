@@ -1,7 +1,7 @@
 import axios from "axios"
 import {AT_PROJECTS, AT_SKILLS, AT_AUTH} from "./action-types";
 
-const URL = "http://194.99.20.122:8080";
+const URL = "http://194.32.76.217:8080";
 
 export function setAuthentication(mode) {
     return {
